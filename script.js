@@ -11,7 +11,7 @@ function threeSum(arr, target) {
                 return currentSum;
             } else if (Math.abs(currentSum - target) < Math.abs(closestSum - target)) {
                 closestSum = currentSum;
-                closestNums = [nums[i], nums[j], nums[k]];
+                closestNums = [arr[i], arr[j], arr[k]];
             }
             if (currentSum > target) {
                 k--;
